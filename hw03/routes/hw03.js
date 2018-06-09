@@ -24,7 +24,7 @@ router.get('/:name', function (req, res) {
                 if (err) {
                     res.send(err)}
                 else {
-                    res.send({name: new_len.name, length: new_len.length})}
+                    res.json({name: new_len.name, length: new_len.length})}
             })
         }
         else {
@@ -45,7 +45,7 @@ router.post('/', function(req, res) {
                 if (err) {
                     res.send(err)}
                 else {
-                    res.send({name: new_len.name, length: new_len.length})}
+                    res.json({name: new_len.name, length: new_len.length})}
             })
         }
         else {
